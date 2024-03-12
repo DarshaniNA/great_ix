@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/formRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.form.FormFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_above="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/pageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="25dp"
+                android:text="Details" />
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:id="@+id/whoWasGreatView"
+                android:text="@string/who_is_great"
+                app:infoText="This is so we can send them a thank you card &amp; letter of recognition"
+                android:inputType = "textCapWords"
+                app:configurationKey="WHO_GREAT_KEY"/>
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:id="@+id/theirRoleView"
+                android:text="Do you know their role or specialty?"
+                app:infoText="To help us get this to them"
+                android:inputType = "textCapWords"
+                app:configurationKey="SPECIALITY_KEY"/>
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:id="@+id/recipientsEmailView"
+                android:text="Do you know their email"
+                android:hint="@string/email_hint"
+                android:inputType = "textEmailAddress"
+                app:configurationKey="RECIPIENT_EMAIL_KEY"/>
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:id="@+id/whatWasExcellentView"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines ="4"
+                android:hint="I think you're great because..."
+                app:infoText="@string/you_are_great_des"
+                android:text="What did they do that was excellent? *"/>
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:id="@+id/lessonToLearnView"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines ="4"
+                android:text="Could we learn from this?"/>
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:id="@+id/howToImproveView"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLines ="4"
+                android:text="Do you have ideas that we could use to spread learning from this positive event?"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/nextButton"
+        style="@style/next_button" />
+
+</RelativeLayout>

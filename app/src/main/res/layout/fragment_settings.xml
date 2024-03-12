@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/pageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingBottom="25dp"
+                android:text="Your Details" />
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:text="Your name *"
+                android:layout_marginTop="0dp"
+                android:inputType = "textCapWords"
+                app:configurationKey="YOUR_NAME_KEY" />
+
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:text="Which department do you normally work in?"
+                app:fieldType="dropdown"
+                app:pleaseSpecifyFieldId="@+id/otherDepartmentView"
+                app:optionSelector="@array/your_place_of_work_options"
+                app:configurationKey="YOUR_WORK_PLACE_KEY" />
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                android:id="@+id/otherDepartmentView"
+                style="@style/settings_field_container"
+                android:layout_marginTop="0dp"
+                android:text="Please specify *"
+                android:inputType = "textCapWords"
+                app:configurationKey="YOUR_OTHER_WORK_PLACE_KEY" />
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:text="Your role"
+                app:fieldType="dropdown"
+                app:pleaseSpecifyFieldId="@+id/otherRoleView"
+                app:optionSelector="@array/your_role"
+                app:configurationKey="YOUR_ROLE_KEY" />
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                android:id="@+id/otherRoleView"
+                style="@style/settings_field_container"
+                android:layout_marginTop="0dp"
+                android:text="Please specify *"
+                android:inputType = "textCapWords"
+                app:configurationKey="YOUR_OTHER_ROLE_KEY" />
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:text="Your email *"
+                android:inputType = "textEmailAddress"
+                android:layout_marginBottom="12dp"
+                app:configurationKey="YOUR_EMAIL_KEY" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/next_button"
+        android:text="Save"/>
+
+</RelativeLayout>

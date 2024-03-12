@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="text_size_default">16sp</dimen>
+
+    <dimen name="a5_width">148mm</dimen>
+    <dimen name="a5_height">210mm</dimen>
+    <dimen name="a6_width">148mm</dimen>
+    <dimen name="a6_height">105mm</dimen>
+
+</resources>

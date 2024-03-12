@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+        <TextView
+                android:id="@+id/horizontalDialogTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/alert_title_text"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="13dp"/>
+
+        <TextView
+                android:id="@+id/horizontalDialogMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/alert_message_text"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/light_grey"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+                android:id="@+id/horizontalPositiveButton"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+
+                style="@style/alert_button_text_horizontal"/>
+
+        <Button
+                android:id="@+id/horizontalNegativeButton"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+
+                style="@style/alert_button_text_horizontal"/>
+
+        <Button
+                android:id="@+id/horizontalOtherButton"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+
+                style="@style/alert_button_text_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

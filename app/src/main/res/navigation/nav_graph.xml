@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="@string/great_ix"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListingFragment">
+
+    <!-- Action back to destination which launched into this in_game_nav_graph-->
+    <action android:id="@+id/action_back"
+        app:destination="@id/ListingFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popUpTo="@id/ListingFragment"
+        app:popUpToInclusive="true"/>
+
+    <action android:id="@+id/action_about"
+        app:destination="@id/AboutFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popUpTo="@id/AboutFragment"
+        app:popUpToInclusive="true"/>
+
+    <fragment
+        android:id="@+id/SettingsFragment"
+        android:name="com.beardedhen.great_ix.ui.settings.SettingsFragment"
+        tools:layout="@layout/fragment_settings">
+    </fragment>
+    <fragment
+        android:id="@+id/ListingFragment"
+        android:name="com.beardedhen.great_ix.ui.list.ListingFragment"
+        tools:layout="@layout/fragment_listing">
+
+        <action
+            android:id="@+id/action_go_to_login"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:destination="@id/LoginFragment"
+            app:popUpTo="@id/LoginFragment"
+            app:popUpToInclusive="true"/>
+
+        <action
+            android:id="@+id/action_ListingFragment_to_SettingsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:destination="@id/SettingsFragment" />
+
+        <action
+            android:id="@+id/action_ListingFragment_to_FormFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:destination="@id/FormFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/FormFragment"
+        android:name="com.beardedhen.great_ix.ui.form.FormFragment"
+        tools:layout="@layout/fragment_form" >
+
+        <action
+            android:id="@+id/action_Form_Part1_to_Part2"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:destination="@id/FormPart2Fragment" />
+
+        <argument
+            android:name="formId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+    <fragment
+        android:id="@+id/FormPart2Fragment"
+        android:name="com.beardedhen.great_ix.ui.form.FormPart2Fragment"
+        tools:layout="@layout/fragment_form_part_2" >
+
+        <action
+            android:id="@+id/action_Form_Part2_to_CardSelection"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:destination="@id/SelectCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SelectCardFragment"
+        android:name="com.beardedhen.great_ix.ui.form.CardSelectionFragment"
+        tools:layout="@layout/fragment_card_selection" >
+
+        <action
+            android:id="@+id/action_SelectCardFragment_to_pdfPreviewFragment"
+            app:destination="@id/PdfPreviewFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/AboutFragment"
+        android:name="com.beardedhen.great_ix.ui.about.AboutFragment"
+        tools:layout="@layout/fragment_about" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.beardedhen.great_ix.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login" >
+
+        <action
+            android:id="@+id/action_LoginFragment_to_SettingsFragment"
+            app:destination="@id/SettingsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/SettingsFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/PdfPreviewFragment"
+        android:name="com.beardedhen.great_ix.pdf.PdfPreviewFragment"
+        tools:layout="@layout/fragment_pdf_preview">
+        <action
+            android:id="@+id/action_submit_form"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popUpTo="@id/ListingFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/ListingFragment" />
+    </fragment>
+</navigation>

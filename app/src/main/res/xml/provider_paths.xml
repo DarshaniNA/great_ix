@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="files-path" path="."/>
+    <external-path name="pdfFile" path="pdf/"/>
+    <external-path name="csvFile" path="csv/"/>
+</paths>

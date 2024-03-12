@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/field_container">
+
+    <TextView
+        android:id="@+id/labelView"
+        tools:text="Field Label"
+        style="@style/label_view"/>
+
+    <TextView
+        android:id="@+id/infoView"
+        android:textSize="14sp"
+        android:paddingStart="5dp"
+        android:textColor="@color/dark_grey"
+        android:visibility="gone"
+        style="@style/label_view"/>
+
+    <ViewFlipper
+        android:id="@+id/fieldFlipperView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/fieldView"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/dark_grey"
+            style="@style/settings_edit_text_view"/>
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkboxView"-->
+<!--            style="@style/settings_edit_text_view"-->
+<!--            app:buttonTint="@color/white"/>-->
+        <Spinner
+            android:id="@+id/spinnerView"
+            style="@style/settings_edit_text_view"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioGroup
+                android:id="@+id/radioGroupView"
+                style="@style/settings_edit_text_view"/>
+
+            <TextView
+                android:id="@+id/errorView"
+                android:textSize="18sp"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                style="@style/settings_edit_text_view"/>
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+</LinearLayout>

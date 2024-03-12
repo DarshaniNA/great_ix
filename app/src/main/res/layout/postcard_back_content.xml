@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contentView"
+    android:background="@drawable/postcard_background"
+    android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="25mm"
+            android:paddingStart="10mm"
+            android:paddingEnd="10mm"
+            android:paddingBottom="10mm"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameNominated"
+                android:text="@string/name_nominated"
+                style="@style/postcard_field"/>
+
+            <TextView
+                android:id="@+id/youAreGreat"
+                android:text="@string/you_are_great"
+                style="@style/postcard_field"/>
+
+            <TextView
+                android:id="@+id/msgFromSubmission"
+                android:text="@string/submission_form_msg"
+                style="@style/postcard_field"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10mm"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/thankYouView"
+                    android:text="Thank You, «name_of_the_submitter» :-)"
+                    android:gravity="right"
+                    style="@style/postcard_field"/>
+
+                <TextView
+                    android:id="@+id/formDate"
+                    android:text="«Date»"
+                    android:gravity="right"
+                    style="@style/postcard_field"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</RelativeLayout>

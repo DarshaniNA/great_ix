@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7mm"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/letter_header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/banner1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addressView"
+            android:text="@string/address"
+            android:autoLink="email|web"
+            android:linksClickable="true"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_weight="0.2"
+            android:gravity="right"
+            style="@style/pdf_field"/>
+
+        <TextView
+            android:id="@+id/dateView"
+            android:text="21 March 2020"
+            android:layout_weight="0.2"
+            android:gravity="right"
+            style="@style/pdf_field"/>
+
+        <TextView
+            android:id="@+id/recipientsNameView"
+            android:text="Who did great???"
+            android:layout_weight="0.2"
+            style="@style/pdf_field"/>
+
+        <TextView
+            android:text="Congratulations – A GREAT-ix was submitted by a colleague:"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            style="@style/pdf_field"/>
+
+        <TextView
+            android:id="@+id/fromNameAndDateView"
+            android:text="«Name_for_Thank_You_Card__Letter» on «Date»"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.2"
+            style="@style/pdf_field"/>
+
+        <TextView
+            android:text="This is because you did something excellent…"
+            android:layout_weight="0.2"
+            android:gravity="center_horizontal"
+            style="@style/pdf_field"/>
+
+        <TextView
+            android:id="@+id/deedDoneView"
+            android:text="«What_did_they_do_that_was_excellent_»"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/pdf_field"/>
+
+        <TextView
+            android:id="@+id/learningView"
+            android:text="@string/additional_learnings"
+            android:autoLink="email"
+            android:linksClickable="true"
+            android:textColorLink="@color/colorPrimary"
+            android:layout_weight="0.2"
+            style="@style/pdf_field"/>
+
+        <LinearLayout
+            android:id="@+id/footerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="30mm"
+                android:layout_height="20mm"
+                android:layout_gravity="left"
+
+                android:src="@drawable/signature_for_letters"></ImageView>
+
+            <TextView
+                android:text="Dr Mel Poole"
+                style="@style/pdf_field"/>
+
+            <TextView
+                android:id="@+id/letterClosing"
+                android:text="@string/letter_closing"
+                android:textStyle="bold"
+                style="@style/pdf_field"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100mm"
+        android:layout_height="40mm"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer"></ImageView>
+</RelativeLayout>

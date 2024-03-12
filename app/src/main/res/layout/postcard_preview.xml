@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/postcardContent"
+    android:layout_width="@dimen/a5_width"
+    android:layout_height="@dimen/a5_height"
+    android:orientation="vertical">
+
+    <com.beardedhen.great_ix.pdf.postcard.PostcardFrontView
+        android:id="@+id/postcardFrontView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.beardedhen.great_ix.pdf.postcard.PostcardBackView
+        android:id="@+id/postcardBackView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>

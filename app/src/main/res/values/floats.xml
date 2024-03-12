@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- sqrt(2): The ratio of A4 paper -->
+    <!-- Can be overridden, North America has a different standard -->
+    <item name="page_height_ratio" format="float" type="dimen">1.41421356237</item>
+
+</resources>

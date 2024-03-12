@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/loginButton">
+
+        <LinearLayout
+            android:id="@+id/pageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="Welcome" />
+
+            <TextView
+                android:id="@+id/bodyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/login_text_1" />
+
+            <com.beardedhen.great_ix.ui.views.SettingsFieldView
+                style="@style/settings_field_container"
+                android:id="@+id/passwordText"
+                android:text="Password *"
+                android:layout_marginBottom="30dp"
+                android:inputType = "textPassword"
+                app:configurationKey="PASSWORD" />
+
+            <TextView
+                android:autoLink="email"
+                android:linksClickable="true"
+                android:textColorLink="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/login_text_2" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/next_button"
+        android:text="Login"/>
+
+</RelativeLayout>

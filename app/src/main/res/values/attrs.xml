@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingsView">
+        <attr name="minValue" format="integer"/>
+<!--        <attr name="defaultValue" format="integer"/>-->
+        <attr name="configurationKey" format="string"/>
+        <attr name="infoText" format="string"/>
+        <attr name="android:hint"/>
+        <attr name="android:text"/>
+        <attr name="android:inputType"/>
+        <attr name="fieldType" format="enum">
+            <enum name="textField" value="0"/>
+            <enum name="dropdown" value="1"/>
+<!--            <enum name="checkbox" value="2"/>-->
+            <enum name="radiobutton" value="2"/>
+        </attr>
+        <attr name="optionSelector" format="reference"/>
+        <attr name="singleChoiceValue" format="string"/>
+        <attr name="pleaseSpecifyFieldId" format="reference"/>
+    </declare-styleable>
+
+</resources>

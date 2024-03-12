@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="7dp"
+    tools:context=".pdf.PrintReportActivity">
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Preview" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleLabel"
+        android:layout_above="@id/previewButton"
+        android:padding="1dp"
+        android:background="@drawable/accent_border">
+
+        <ViewSwitcher
+            android:id="@+id/previewSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.beardedhen.great_ix.utils.TouchImageView
+                android:id="@+id/pdfContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@color/white"/>
+
+            <com.beardedhen.great_ix.utils.TouchImageView
+                android:id="@+id/postcardContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:background="@color/white"/>
+
+        </ViewSwitcher>
+    </FrameLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/btnContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="4dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingBottom="10dp">-->
+
+        <Button
+            android:id="@+id/previewButton"
+            style="@style/next_button"
+            android:layout_alignParentLeft="true"
+            android:text="Letter Preview" />
+
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/next_button"
+            android:layout_alignParentRight="true"
+            android:text="Submit" />
+
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">GREAT-ix</string>
+    <string name="password">Gwent2020</string>
+    <string-array name="recipient_email">
+        <item>greatix.abb@wales.nhs.uk</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <string name="next">Next</string>
+
+    <!--    PDF strings-->
+    <string name="additional_learnings">If you could suggest any additional learning or ways to spread excellence then please let us
+        know by emailing us at <a href="http://www.wales.nhs.uk/" /><font fgcolor='#0000FF'>GREATix@wales.nhs.uk</font>
+        \n\nPlease take the time to report more excellence and encourage your colleagues to do the same.
+        \n\nThank you and well done.</string>
+    <string name="letter_closing">Consultant Anaesthetist and Great-ix Lead, Royal Gwent Hospital\n\n</string>
+    <string name="address"><font fgcolor='#565656'><b>Royal Gwent Hospital</b>
+    \nCardiff Road, Newport
+    \nGwent, NP20 2UB.</font>
+    \n\n<a href="www.greatix.org" /><font fgcolor='#1e62b5'>www.greatix.org</font>
+    \n<a href="greatix.abb@wales.nhs.uk" /><font fgcolor='#1e62b5'>greatix.abb@wales.nhs.uk</font></string>
+
+    <!--    Setting Screen String-->
+    <string name="who_is_great">Who is great? *</string>
+
+<!--    Login Text-->
+    <string name="login_text_1">This App is for all staff working across Aneurin Bevan UHB to submit a GREAT-ix form about a colleague or team.
+    \n\nThanks for taking the time to report the great things they have done! :-)
+    \n\nPlease enter the password to proceed to the submission page.</string>
+    <string name="login_text_2">*** No patient identifiable information should be included ***
+\n\nIf you have forgotten the password, please send an email to <a href = "abuhb.greatix@wales.nhs.uk"/><font fgcolor='#1e62b5'> abuhb.greatix@wales.nhs.uk,</font> with your staff role, and we will provide you with the password.\n\n\n
+The app has been designed and set up for use for Theatres/Anaesthetics/ICU at The Royal Gwent Hospital, but if you are interested in using in your hospital/dept then please email melanie.poole@wales.nhs.uk.\n\n
+    </string>
+
+    <!--    Main Form Strings-->
+    <string name="remain_anonymous">Do you want to remain anonymous to the recipient? *</string>
+    <string name="publish_comments">Can we publish some/all of your comments? *</string>
+    <string name="email_body">Thank you for submitting a Great-ix!\n\n
+        The recipient will receive a card and letter in recognition.\n\n
+        The Great-ix Team</string>
+    <string name="email_hint">Leave blank if you don\'t know</string>
+    <string name="you_are_great_des">What you write here will go on the thank you card and is included in the formal letter of recognition EXACTLY as written.</string>
+
+<!--    postcard-->
+    <string name="postcard_preview">Postcard Preview</string>
+    <string name="letter_preview">Letter Preview</string>
+    <string name="name_nominated">Dear Arg: %1$s\n\n</string>
+    <string name="you_are_great">I think you are great because…\n</string>
+    <string name="submission_form_msg">message from Why are they great on submission form\n\n</string>
+
+    <string name="tap_again_to_exit">Tap back again to exit!</string>
+    <string name="great_ix">GREAT-ix</string>
+    <string name="password_changed_title">Password Changed</string>
+    <string name="password_changed_text">GREAT-ix\'s password has changed.  Please use the new one.</string>
+
+    <string name="discard_changes_title">Discard Changes?</string>
+    <string name="discard_changes_text">OK to discard any changes made?</string>
+
+    <string name="submit_confirmation_title">Please select your normal email  app from the following share options.</string>
+    <string name="submit_confirmation">The GREAT-ix email address will automatically appeared in your email’s send to field. Please, send this email to complete the submission process.
+        \n\nThank you for taking the time to complete this GREAT-ix, the recipient will receive a card and letter in recognition.</string>
+
+    <string-array name="your_place_of_work_options">
+        <item>Theatres</item>
+        <item>Recovery</item>
+        <item>Anaesthetics</item>
+        <item>Intensive Care</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="your_role">
+        <item>Administrative Staff</item>
+        <item>Cleaner/Domestic Staff</item>
+        <item>Doctor - Consultant/Associate Specialist</item>
+        <item>Doctor - Registrar/Staff Grade</item>
+        <item>Doctor - Core Trainee/Clinical Fellow</item>
+        <item>Doctor - F1/F2</item>
+        <item>Estates</item>
+        <item>Health Care Assistant</item>
+        <item>Management Staff (clinical)</item>
+        <item>Management Staff (non-clinical)</item>
+        <item>Midwife</item>
+        <item>Nurse - Band 5</item>
+        <item>Nurse - Band 7</item>
+        <item>Porter</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="yes_no">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+    <string-array name="publish_comments">
+        <item>Yes - and you can include my name</item>
+        <item>Yes - but please ensure that they are anonymous</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="about_app">GREAT-ix makes showing your appreciation for a colleague\'s dedication official and easy!\n\nThe app has been designed and set up for use for Theatres/Anaesthetics/ICU at The Royal Gwent Hospital, but if you are interested in using in your hospital/dept then please email <a href="mailto:melanie.poole@wales.nhs.uk">melanie.poole@wales.nhs.uk</a>.\n\n<a href="https://beardedhen.com">Bearded Hen Ltd</a> developed the app free of charge to the NHS.  Use of the app is entirely at the user\'s own risk and ownership of the code remains with Bearded Hen</string>
+
+    <string name="card_1">Dragon</string>
+    <string name="card_2">Heart</string>
+    <string name="card_3">Rainbow</string>
+    <string name="card_4">Star</string>
+    <string name="no_card_selected">Not Selected</string>
+
+</resources>

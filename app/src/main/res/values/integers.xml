@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="animTime">400</integer>
+
+    <integer  name="a4_width_mm">210</integer>
+    <integer  name="a6_width_mm">148</integer>
+    <integer  name="a6_height_mm">105</integer>
+</resources>
